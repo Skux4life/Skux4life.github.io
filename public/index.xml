@@ -2,26 +2,46 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Matthew Ellis Portfolio</title>
-    <link>http://example.org/</link>
+    <link>https://skux4life.github.io/</link>
     <description>Recent content on Matthew Ellis Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 12 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 29 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://skux4life.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>30 Days of Chinese</title>
+      <link>https://skux4life.github.io/projects/thirty-days-of-chinese/</link>
+      <pubDate>Sat, 29 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://skux4life.github.io/projects/thirty-days-of-chinese/</guid>
+      <description>The app includes 30 essential Chinese characters, their stroke order, pinyin and meaning in English.
+Written using Kotlin and Jetpack Compose. A LazyColumn Composable was used to create a scrollable list containing each of the Chinese Characters.</description>
+    </item>
+    
+    <item>
+      <title>Tax Deductible Savings</title>
+      <link>https://skux4life.github.io/projects/tax-deductible-saving/</link>
+      <pubDate>Sat, 22 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://skux4life.github.io/projects/tax-deductible-saving/</guid>
+      <description>A simple android app that will calculate the adjusted cost of a tax-deductible purchase based on the user&amp;rsquo;s income tax bracket.
+The app is written in Kotlin and utilises Jetpack Compose.</description>
+    </item>
+    
     <item>
       <title>Airbnb Scraper</title>
-      <link>http://example.org/projects/airbnb-scraper/</link>
+      <link>https://skux4life.github.io/projects/airbnb-scraper/</link>
       <pubDate>Sat, 12 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/projects/airbnb-scraper/</guid>
+      <guid>https://skux4life.github.io/projects/airbnb-scraper/</guid>
       <description>A program written in Python that will scrape data from Airbnb. It takes in a destination and date range and will output a csv file with the relevant listings. I found it much easier to filter options this way and used it to plan a weekend away. One of the challenges is that the selectors used change frequently and so it is quite fragile.</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://example.org/test/</link>
+      <link>https://skux4life.github.io/test/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/test/</guid>
+      <guid>https://skux4life.github.io/test/</guid>
       <description>Hello this is a test</description>
     </item>
     
