@@ -1,3 +1,5 @@
 # Skux4life.github.io
 
-Portfolio website built using Hugo and using Github pages.
+# Portfolio website built using Astro and using Github pages.
+
+# Milky-Way
