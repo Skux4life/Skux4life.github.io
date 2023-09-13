@@ -39,6 +39,10 @@ Clone this repository to your local machine using Git.
 
 # Milky-Way
 
+=======
+
+# <img align="center" alt="Astro" width="60px" src="https://www.svgrepo.com/show/373446/astro.svg"/> Milky-Way
+
 This is a portfolio template built using CSS, HTML, JavaScript, and Astro. It serves as a starting point for creating your personal portfolio website or showcasing your projects online. The template is open-source and released under the MIT license, meaning you are free to use, modify, and distribute it for personal or commercial purposes.
 
 ## Features
