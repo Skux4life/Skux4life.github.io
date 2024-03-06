@@ -62,9 +62,10 @@ Edit the HTML files in the `src/pages` directory to add your projects, experienc
 │   └── youtube.png
 ├── src/
 │   ├── components/
+│   ├── content/
 │   ├── layouts/
-│   └── pages/
-│   └── styles/
+│   ├── pages/
+│   ├── styles/
 │   └── env.d.ts
 └── package.json
 ```
