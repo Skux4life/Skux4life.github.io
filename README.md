@@ -5,6 +5,7 @@
 # 🌌 Milky-Way
 
 This is a portfolio template built using CSS, HTML, JavaScript, and Astro. It serves as a starting point for creating your personal portfolio website or showcasing your projects online. The template is open-source and released under the MIT license, meaning you are free to use, modify, and distribute it for personal or commercial purposes.
+
 Milky Way brings forth a minimalist design ethos, allowing your work to shine like stars in the night sky. With clean lines and intuitive navigation, visitors are guided effortlessly through your portfolio, focusing solely on your creations.
 
 Embrace the whimsical charm of Milky Way as it showcases your talents in a manner that's both elegant and endearing. Whether you're a designer, developer, artist, or creative professional of any kind, Milky Way provides the perfect canvas to showcase your endeavors.
@@ -49,8 +50,6 @@ Clone this repository to your local machine using Git.
 
 This is a portfolio template built using CSS, HTML, JavaScript, and Astro. It serves as a starting point for creating your personal portfolio website or showcasing your projects online. The template is open-source and released under the MIT license, meaning you are free to use, modify, and distribute it for personal or commercial purposes.
 
-> > > > > > > a8c746a (Update README.md)
-
 <p align="center">
   <img align="center" alt="Astro" src="https://astro.build/_astro/milky-way-hero@2x.16ef18b3.webp"/>
 </p>
@@ -93,8 +92,6 @@ Clone this repository to your local machine using Git.
 git clone https://github.com/ttomczak3/Milky-Way.git
 cd Milky-Way
 ```
-
-<<<<<<< HEAD
 
 2. # **Install Dependencies:** Ensure you have Node.js and npm installed. Then, install the project dependencies.
 
@@ -144,7 +141,6 @@ If you enjoy Milky-Way and would like to show your support and appreciation thro
 # [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/X8X0P7FGR)
 
 2. # **Install Dependencies:** Ensure you have Node.js and npm installed. Then, install the project dependencies.
-   > > > > > > > a8c746a (Update README.md)
 
 | Command           | Action                                       |
 | :---------------- | :------------------------------------------- |
