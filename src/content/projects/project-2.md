@@ -1,19 +1,19 @@
 ---
-title: 'Project 2'
-description: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci'
+title: "Alien Invasion"
+description: "Space invaders style game built with pygame"
 image:
-    url: '/GitHub.webp'
-    alt: 'GitHub wallpaper'
+  url: "/images/pygame.jpg"
+  alt: "Pygame logo"
 worksImage1:
-    url: '/image-1.webp'
-    alt: 'first image of your project.'
+  url: "/images/alien-invasion-2.png"
+  alt: "game start image"
 worksImage2:
-    url: '/image-2.webp'
-    alt: 'second image of your project.'
+  url: "/images/pygame.jpg"
+  alt: "pygame"
 platform: Web
-stack: Astro, JavaScript
-website: https://astro-milky-way.netlify.app/
-github: https://github.com/ttomczak3/Milky-Way
+stack: Python, Pygame
+website: https://github.com/Skux4life/alien_invasion
+github: https://github.com/Skux4life/alien_invasion
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras faucibus a tortor at molestie. Sed pellentesque leo auctor, auctor lorem nec, venenatis risus. Vivamus commodo ipsum vitae orci finibus, vel porta nunc viverra. In hac habitasse platea dictumst. Nunc pretium, ligula ultricies consequat sollicitudin, enim ex ullamcorper nisl.
+In Alien Invasion, the player controls a rocket ship that appears at the bottom center of the screen. The player can move the ship right and left using the arrow keys and shoot bullets using the spacebar. When the game begins, a fleet of aliens fills the sky and moves across and down the screen. The player shoots and destroys the aliens. If the player destroys all the aliens, a new fleet appears that moves faster than the previous fleet. If any aliens hits the player's ship or reaches the bottom of the screen, the player loses a ship. If the player loses three ships, the game ends.

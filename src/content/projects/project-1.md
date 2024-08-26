@@ -1,19 +1,20 @@
 ---
-title: 'Project 1'
-description: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci'
+title: "CDK Football"
+description: "A simple API to try out using AWS CDK."
 image:
-    url: '/GitHub.webp'
-    alt: 'GitHub wallpaper'
+  url: "/GitHub.webp"
+  alt: "GitHub wallpaper"
 worksImage1:
-    url: '/image-1.webp'
-    alt: 'first image of your project.'
+  url: "/images/aws-cdk.png"
+  alt: "AWS CDK"
 worksImage2:
-    url: '/image-2.webp'
-    alt: 'second image of your project.'
+  url: "/images/football.jpeg"
+  alt: "Football graphic"
 platform: Web
-stack: Astro, JavaScript
-website: https://astro-milky-way.netlify.app/
-github: https://github.com/ttomczak3/Milky-Way
+stack: AWS CDK, NodeJS
+website: https://github.com/Skux4life/cdk-football
+github: https://github.com/Skux4life/cdk-football
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras faucibus a tortor at molestie. Sed pellentesque leo auctor, auctor lorem nec, venenatis risus. Vivamus commodo ipsum vitae orci finibus, vel porta nunc viverra. In hac habitasse platea dictumst. Nunc pretium, ligula ultricies consequat sollicitudin, enim ex ullamcorper nisl.
+This is my first project using AWS CDK. It is a simple http API. The stack contains an API Gateway and a Lambda function.
+When sending a request to this API the Lambda function will make a request to another service to obtain some football related data and then return that in the response.
