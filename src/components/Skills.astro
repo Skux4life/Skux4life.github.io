@@ -1,0 +1,81 @@
+---
+import TechIcon from "./TechIcon.astro";
+import AstroSvg from "../assets/icons/astro.svg";
+import ReactSvg from "../assets/icons/react.svg";
+import NodeSvg from "../assets/icons/nodejs.svg";
+import TailwindSvg from "../assets/icons/tailwind.svg";
+import HtmlSvg from "../assets/icons/html.svg";
+import CssSvg from "../assets/icons/css.svg";
+import GitSvg from "../assets/icons/git.svg";
+import JsSvg from "../assets/icons/javascript.svg";
+import TypeScriptSvg from "../assets/icons/typescript.svg";
+import PythonSvg from "../assets/icons/python.svg";
+import JavaSvg from "../assets/icons/java.svg";
+---
+
+<div class="container">
+  <div class="skill-icons animate-scroll">
+    <TechIcon image={AstroSvg.src} label="Astro" />
+    <TechIcon image={ReactSvg.src} label="React" />
+    <TechIcon image={NodeSvg.src} label="NodeJS" />
+    <TechIcon image={TailwindSvg.src} label="TailwindCSS" />
+    <TechIcon image={HtmlSvg.src} label="HTML" />
+    <TechIcon image={CssSvg.src} label="CSS" />
+    <TechIcon image={GitSvg.src} label="Git" />
+    <TechIcon image={JsSvg.src} label="JavaScript" />
+    <TechIcon image={TypeScriptSvg.src} label="TypeScript" />
+    <TechIcon image={PythonSvg.src} label="Python" />
+    <TechIcon image={JavaSvg.src} label="Java" />
+    <TechIcon image={AstroSvg.src} label="Astro" />
+    <TechIcon image={ReactSvg.src} label="React" />
+    <TechIcon image={NodeSvg.src} label="NodeJS" />
+    <TechIcon image={TailwindSvg.src} label="TailwindCSS" />
+    <TechIcon image={HtmlSvg.src} label="HTML" />
+    <TechIcon image={CssSvg.src} label="CSS" />
+    <TechIcon image={GitSvg.src} label="Git" />
+    <TechIcon image={JsSvg.src} label="JavaScript" />
+    <TechIcon image={TypeScriptSvg.src} label="TypeScript" />
+    <TechIcon image={PythonSvg.src} label="Python" />
+    <TechIcon image={JavaSvg.src} label="Java" />
+    <TechIcon image={AstroSvg.src} label="Astro" />
+    <TechIcon image={ReactSvg.src} label="React" />
+    <TechIcon image={NodeSvg.src} label="NodeJS" />
+    <TechIcon image={TailwindSvg.src} label="TailwindCSS" />
+    <TechIcon image={HtmlSvg.src} label="HTML" />
+    <TechIcon image={CssSvg.src} label="CSS" />
+    <TechIcon image={GitSvg.src} label="Git" />
+    <TechIcon image={JsSvg.src} label="JavaScript" />
+    <TechIcon image={TypeScriptSvg.src} label="TypeScript" />
+    <TechIcon image={PythonSvg.src} label="Python" />
+    <TechIcon image={JavaSvg.src} label="Java" />
+  </div>
+</div>
+<style>
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transfrom: translateX(-50%);
+    }
+  }
+  .container {
+    position: relative;
+    overflow-x: hidden;
+    width: 4000px;
+    margin: 0;
+  }
+  .skill-icons {
+    display: flex;
+    gap: 30px;
+    overflow: hidden;
+    height: 100%;
+    margin: 0;
+    justify-content: space-between;
+    width: max-content;
+  }
+
+  .animate-scroll {
+    animation: scroll 60s infinite linear;
+  }
+</style>

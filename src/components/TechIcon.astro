@@ -1,0 +1,16 @@
+---
+const { image, label } = Astro.props;
+---
+
+<div class="container animate">
+  <img src={image} alt={label} height="32" width="32" />
+  <span>{label}</span>
+</div>
+
+<style>
+  .container {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+  }
+</style>

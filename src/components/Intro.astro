@@ -2,31 +2,38 @@
 
 ---
 
-<h1 class="typed-out">Hi, I'm Matt Ellis</h1>
-<span class="badge">Web Development | Automation | QA</span>
-
-<div class="cool-heading">
-  <div class="curved-rectangle"></div>
-  <h2>About</h2>
+<div class="typed-out">
+  <h2>Hi, I'm Matt Ellis</h2>
 </div>
+<h1 class="badge shadow">Software Developer</h1>
+
 <p>
-  Hi my name is Matt. I have over 5 years of experience in the software
-  industry. I am especially skilled at automation and web development.
-</p>
-<p>
-  I enjoy making things work well and am learning how to also make them look
-  nice. I don't enjoy doing repetitive tasks, hence why I also enjoy automation.
+  Capable of working across the full stack with a focus on the frontend.
+  Passionate about problem solving and crafting engaging experiences.
 </p>
 
 <style>
-  .typed-out {
+  /* .typed-out { */
+  /*   width: 80%; */
+  /* } */
+  .typed-out h2 {
+    font-size: 2.1em;
     overflow: hidden;
-    border-right: 0.15em solid var(--text);
+    border-right: 0.1em solid var(--text);
     white-space: nowrap;
     margin: 0 auto;
     animation:
       typing 3.5s steps(40, end),
       blink-caret 0.75s step-end infinite;
+  }
+
+  @media (min-width: 600px) {
+    .typed-out h2 {
+      font-size: 3.3em;
+    }
+  }
+  .shadow {
+    box-shadow: var(--background-alt) 0px 7px 29px 0px;
   }
 
   @keyframes blink-caret {
@@ -35,7 +42,7 @@
       border-color: transparent;
     }
     50% {
-      border-color: var(--text);
+      border-color: currentColor;
     }
   }
 
