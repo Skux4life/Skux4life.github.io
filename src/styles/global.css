@@ -421,13 +421,14 @@ html.light {
 
 .cool-heading {
   margin-top: 2rem;
+  margin-bottom: 2rem;
   position: relative;
   height: 200px;
 
   h2 {
     position: absolute;
     top: 25%;
-    left: 10%;
+    left: 6.5%;
   }
 }
 
@@ -483,5 +484,9 @@ html.light {
   .pro-img {
     height: auto;
     width: 350px;
+  }
+
+  .cool-heading h2 {
+    left: 10%;
   }
 }

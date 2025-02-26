@@ -1,36 +1,21 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Intro from "../components/Intro.astro";
-import Skills from "../components/Skills.astro";
-import Test from "../components/Test.astro";
+import TechIcons from "../components/TechIcons.astro";
 const pageTitle = "Skux4life";
 ---
 
 <Layout pageTitle={pageTitle}>
   <Intro />
-  <div class="center">
-    <a href="/works/">
-      <button class="btn">My portfolio</button>
-    </a>
-  </div>
   <div class="cool-heading">
     <div class="curved-rectangle"></div>
     <h2>Skills</h2>
   </div>
 
-  <Test />
-
-  <div class="cool-heading">
-    <div class="curved-rectangle"></div>
-    <h2>Interests</h2>
+  <TechIcons />
+  <div class="center">
+    <a href="/works/">
+      <button class="btn">My portfolio</button>
+    </a>
   </div>
-  <p>
-    When time permits I enjoy learning about Linux and tweaking my setup. I have
-    just begun dipping my toe into the Nix and NixOS ecosystem.
-  </p>
-  <p>
-    Outside of software related things, my hobbies include playing with my son,
-    weightlifting, learning mandarin Chinese and watching Korean dramas with my
-    wife.
-  </p>
 </Layout>
