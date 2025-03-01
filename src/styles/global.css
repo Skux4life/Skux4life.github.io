@@ -85,6 +85,13 @@ body {
   max-width: 540px;
   margin: 0 auto;
   text-align: justify;
+  word-break: unset;
+  word-wrap: unset;
+  overflow-wrap: unset;
+  -webkit-hyphens: unset;
+  -moz-hyphens: unset;
+  -ms-hyphens: unset;
+  hyphens: unset;
 }
 
 h1,
@@ -107,7 +114,6 @@ h2 {
 p {
   font-family: var(--body);
   font-size: 1.1rem;
-  hyphens: auto;
   line-height: 1.5;
   text-indent: 1rem;
 }
@@ -430,6 +436,11 @@ html.light {
     top: 25%;
     left: 6.5%;
   }
+  p {
+    margin-top: 150px;
+    float: right;
+    text-align: right;
+  }
 }
 
 .curved-rectangle {
@@ -437,7 +448,7 @@ html.light {
 
   height: 200px;
   aspect-ratio: 3/5;
-  background: var(--nord-snow-storm-1);
+  background: var(--nord-frost-3);
   mask: radial-gradient(
     100% calc(var(--c) * 1%) at calc(-100% * cos(asin(50 / var(--c)))),
     #0000 calc(100% - 1px),
@@ -446,6 +457,10 @@ html.light {
   clip-path: ellipse(100% calc(var(--c) * 1%) at left);
   position: absolute;
   z-index: -10;
+}
+
+.light .curved-rectangle {
+  background: var(--nord-frost-1);
 }
 
 /* Media Query */
@@ -488,5 +503,9 @@ html.light {
 
   .cool-heading h2 {
     left: 10%;
+  }
+
+  .cool-heading p {
+    max-width: 200px;
   }
 }

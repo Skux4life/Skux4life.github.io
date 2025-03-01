@@ -1,0 +1,27 @@
+---
+import { getCollection } from "astro:content";
+const allProjects = await getCollection("projects");
+import ProjectCard from "../components/ProjectCard.astro";
+---
+
+<div>
+  <div class="cool-heading">
+    <div class="curved-rectangle"></div>
+    <h2>Projects</h2>
+  </div>
+
+  <div>
+    <!--create a list of project cards  -->
+    <!-- Could add Rest investment options page -->
+    {
+      allProjects.map((card) => (
+        <ProjectCard
+          url={`/projects/${card.slug}/`}
+          image={card.data.image.url}
+          title={card.data.title}
+          body={card.data.description}
+        />
+      ))
+    }
+  </div>
+</div>

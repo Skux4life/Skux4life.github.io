@@ -1,0 +1,72 @@
+---
+interface Props {
+  url: string;
+  image: string;
+  title: string;
+  body: string;
+}
+
+const { url, image, title, body } = Astro.props;
+---
+
+<div class="project">
+  <img src={image} alt={title} width="300px" height="200px" />
+  <h3>{title}</h3>
+  <p>
+    {body}
+  </p>
+
+  <a href={url}
+    >Project Details
+    <svg
+      width="24px"
+      height="24px"
+      viewBox="0 0 16 16"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      transform="rotate(90)"
+    >
+      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+
+      <g
+        id="SVGRepo_tracerCarrier"
+        stroke-linecap="round"
+        stroke-linejoin="round"></g>
+
+      <g id="SVGRepo_iconCarrier">
+        <path
+          d="M6 8L2 8L2 6L8 5.24536e-07L14 6L14 8L10 8L10 16L6 16L6 8Z"
+          fill="currentColor"></path>
+      </g>
+    </svg>
+  </a>
+</div>
+<style>
+  .project {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  img {
+    object-fit: contain;
+  }
+
+  a {
+    font-family: var(--body);
+    border-radius: 16px;
+    margin: 0 auto;
+    width: 160px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    background-color: var(--nord-polar-night-2);
+    color: var(--text);
+  }
+
+  h3 {
+    font-family: var(--header);
+  }
+</style>
