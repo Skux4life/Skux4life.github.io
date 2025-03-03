@@ -1,11 +1,12 @@
 ---
-import { getCollection } from 'astro:content';
-import MarkdownWorksLayout from '../../layouts/MarkdownWorksLayout.astro';
+import { getCollection } from "astro:content";
+import MarkdownWorksLayout from "../../layouts/MarkdownWorksLayout.astro";
 
 export async function getStaticPaths() {
-    const projectEntries = await getCollection('projects');
-    return projectEntries.map(entry => ({
-        params: { slug: entry.slug }, props: { entry },
+  const projectEntries = await getCollection("projects");
+  return projectEntries.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
   }));
 }
 
@@ -14,6 +15,5 @@ const { Content } = await entry.render();
 ---
 
 <MarkdownWorksLayout frontmatter={entry.data}>
-    <Content />
+  <Content />
 </MarkdownWorksLayout>
-

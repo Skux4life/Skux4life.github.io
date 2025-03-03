@@ -9,6 +9,7 @@ interface Props {
 const { url, image, title, body } = Astro.props;
 ---
 
+<!-- add border? -->
 <div class="project">
   <img src={image} alt={title} width="300px" height="200px" />
   <h3>{title}</h3>
@@ -48,7 +49,8 @@ const { url, image, title, body } = Astro.props;
   }
 
   img {
-    object-fit: contain;
+    object-fit: cover;
+    border-radius: 12px;
   }
 
   a {
@@ -64,6 +66,10 @@ const { url, image, title, body } = Astro.props;
     padding: 1rem 2rem;
     background-color: var(--nord-polar-night-2);
     color: var(--text);
+
+    &:hover {
+      font-weight: bold;
+    }
   }
 
   h3 {
