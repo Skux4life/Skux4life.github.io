@@ -245,8 +245,10 @@ li {
 }
 
 .link-card-grid {
+  width: calc(100vw - 200px);
+  margin-left: calc(-50vw + 50% + 100px);
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+  grid-template-columns: 1fr 1fr;
   gap: 1rem;
   padding: 0;
 }
@@ -479,6 +481,9 @@ html.light {
 .light .curved-rectangle {
   background: var(--nord-frost-1);
 }
+.light .other-curved-rectangle {
+  background: var(--nord-frost-1);
+}
 
 /* Media Query */
 @media only screen and (max-width: 600px) {
@@ -524,5 +529,10 @@ html.light {
 
   .cool-heading p {
     max-width: 200px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .link-card-grid {
+    grid-template-columns: 1fr;
   }
 }

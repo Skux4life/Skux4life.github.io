@@ -1,19 +1,21 @@
 ---
-title: 'Project 3'
-description: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci'
+title: "Frontend Challenges"
+description: "A collection of different UI challenges that I've completed."
 image:
-    url: '/GitHub.webp'
-    alt: 'GitHub wallpaper'
-worksImage1:
-    url: '/image-1.webp'
-    alt: 'first image of your project.'
-worksImage2:
-    url: '/image-2.webp'
-    alt: 'second image of your project.'
-platform: Web
-stack: Astro, JavaScript
-website: https://astro-milky-way.netlify.app/
-github: https://github.com/ttomczak3/Milky-Way
+  url: "/src/assets/images/frontend-challenge.png"
+  alt: "Frontend challenges project image"
+platform: Frontend
+stack: Astro | JavaScript | React | TailwindCSS
+website: https://frontend-challenges-4ef.pages.dev/
+github: https://github.com/Skux4life/frontend-challenges
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras faucibus a tortor at molestie. Sed pellentesque leo auctor, auctor lorem nec, venenatis risus. Vivamus commodo ipsum vitae orci finibus, vel porta nunc viverra. In hac habitasse platea dictumst. Nunc pretium, ligula ultricies consequat sollicitudin, enim ex ullamcorper nisl.
+This is a project where I try out different UI challenges. Usually this involves building a single component based on something I've seen in a design. It's just a way that I can keep improving my skills in a fun way.
+
+<img src="/src/assets/images/frontend-challenge-1.png" alt="image 1" 
+      class="pro-img"
+      width="500px"
+      height="auto"
+/>
+
+The project itself uses Astro and for most of the components I'm using React plus TailwindCSS. However, I sometimes just use Astro components with vanilla JS. And in future I might try to use Vue or Svelte.

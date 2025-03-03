@@ -4,12 +4,6 @@ description: "Improving the frontend for members and the backend for staff."
 image:
   url: "/src/assets/images/rest-inv-op.png"
   alt: "Rest Investment Option Page"
-worksImage1:
-  url: "/images/aws-cdk.png"
-  alt: "AWS CDK"
-worksImage2:
-  url: "/images/football.jpeg"
-  alt: "Football graphic"
 platform: Full Stack
 stack: AWS CDK | NodeJS | React | Playwright
 website: https://rest.com.au/investments/options

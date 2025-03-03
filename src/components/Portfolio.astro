@@ -1,6 +1,7 @@
 ---
 import { getCollection } from "astro:content";
-const allProjects = await getCollection("projects");
+let allProjects = await getCollection("projects");
+allProjects = allProjects.slice(0, 3);
 import ProjectCard from "../components/ProjectCard.astro";
 ---
 
@@ -12,8 +13,6 @@ import ProjectCard from "../components/ProjectCard.astro";
   </div>
 
   <div>
-    <!--create a list of project cards  -->
-    <!-- Could add Rest investment options page -->
     {
       allProjects.map((card) => (
         <ProjectCard

@@ -21,13 +21,18 @@ const { frontmatter } = Astro.props;
     <li>
       <span class="badge badge--item">TECH</span>{frontmatter.stack}
     </li>
-    <li>
-      <span class="badge badge--item">WEBSITE</span><a
-        class="badge__link"
-        href={frontmatter.website}
-        target="_blank">{frontmatter.website}</a
-      >
-    </li>
+    {
+      frontmatter.website && (
+        <li>
+          <>
+            <span class="badge badge--item">WEBSITE</span>
+            <a class="badge__link" href={frontmatter.website} target="_blank">
+              {frontmatter.website}
+            </a>
+          </>
+        </li>
+      )
+    }
     {
       frontmatter.github && (
         <li>
