@@ -530,6 +530,11 @@ html.light {
   .cool-heading p {
     max-width: 200px;
   }
+
+  .link-card-grid {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 @media only screen and (max-width: 800px) {
   .link-card-grid {
