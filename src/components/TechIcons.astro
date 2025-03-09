@@ -1,0 +1,85 @@
+---
+import TechIcon from "./Icon.astro";
+import AstroSvg from "../assets/icons/astro.svg";
+import ReactSvg from "../assets/icons/react.svg";
+import NodeSvg from "../assets/icons/nodejs.svg";
+import TailwindSvg from "../assets/icons/tailwind.svg";
+import HtmlSvg from "../assets/icons/html.svg";
+import CssSvg from "../assets/icons/css.svg";
+import GitSvg from "../assets/icons/git.svg";
+import JsSvg from "../assets/icons/javascript.svg";
+import TypeScriptSvg from "../assets/icons/typescript.svg";
+import PythonSvg from "../assets/icons/python.svg";
+import JavaSvg from "../assets/icons/java.svg";
+import K6Svg from "../assets/icons/k6.svg";
+import AwsSvg from "../assets/icons/aws.svg";
+---
+
+<div class="scroll">
+  <div class="m-scroll">
+    <TechIcon image={AstroSvg.src} label="Astro" />
+    <TechIcon image={ReactSvg.src} label="React" />
+    <TechIcon image={NodeSvg.src} label="NodeJS" />
+    <TechIcon image={TailwindSvg.src} label="TailwindCSS" />
+    <TechIcon image={HtmlSvg.src} label="HTML" />
+    <TechIcon image={CssSvg.src} label="CSS" />
+    <TechIcon image={GitSvg.src} label="Git" />
+    <TechIcon image={JsSvg.src} label="JavaScript" />
+    <TechIcon image={TypeScriptSvg.src} label="TypeScript" />
+    <TechIcon image={PythonSvg.src} label="Python" />
+    <TechIcon image={JavaSvg.src} label="Java" />
+    <TechIcon image={K6Svg.src} label="K6" />
+    <TechIcon image={AwsSvg.src} label="AWS" />
+    <TechIcon image={AstroSvg.src} label="Astro" />
+    <TechIcon image={ReactSvg.src} label="React" />
+    <TechIcon image={NodeSvg.src} label="NodeJS" />
+    <TechIcon image={TailwindSvg.src} label="TailwindCSS" />
+    <TechIcon image={HtmlSvg.src} label="HTML" />
+    <TechIcon image={CssSvg.src} label="CSS" />
+    <TechIcon image={GitSvg.src} label="Git" />
+    <TechIcon image={JsSvg.src} label="JavaScript" />
+    <TechIcon image={TypeScriptSvg.src} label="TypeScript" />
+    <TechIcon image={PythonSvg.src} label="Python" />
+    <TechIcon image={JavaSvg.src} label="Java" />
+    <TechIcon image={K6Svg.src} label="K6" />
+    <TechIcon image={AwsSvg.src} label="AWS" />
+  </div>
+</div>
+
+<style>
+  .scroll {
+    position: relative;
+    /* width: 100vw; */
+    overflow: hidden;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+  }
+
+  .m-scroll {
+    overflow: hidden;
+    height: 100%;
+    white-space: nowrap;
+    animation: scrollText 50s infinite linear;
+    margin: 0;
+    display: flex;
+    gap: 4em;
+    justify-content: space-between;
+    width: max-content;
+  }
+
+  span {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+
+  @keyframes scrollText {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+</style>

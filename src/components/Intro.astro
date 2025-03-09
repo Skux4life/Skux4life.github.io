@@ -1,0 +1,54 @@
+---
+
+---
+
+<div class="typed-out">
+  <h2>Hi, I'm Matt Ellis</h2>
+</div>
+<h1 class="badge shadow">Software Developer</h1>
+
+<p>
+  Capable of working across the full stack with a focus on the frontend.
+  Passionate about problem solving and crafting engaging experiences.
+</p>
+
+<style>
+  .typed-out h2 {
+    font-size: 2.1em;
+    overflow: hidden;
+    border-right: 0.1em solid var(--text);
+    white-space: nowrap;
+    margin: 0 auto;
+    animation:
+      typing 3.5s steps(40, end),
+      blink-caret 0.75s step-end infinite;
+  }
+
+  @media (min-width: 600px) {
+    .typed-out h2 {
+      font-size: 3.3em;
+    }
+  }
+  .shadow {
+    box-shadow: var(--background-alt) 0px 7px 29px 0px;
+  }
+
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: currentColor;
+    }
+  }
+
+  @keyframes typing {
+    from {
+      width: 20%;
+    }
+    to {
+      width: 100%;
+    }
+  }
+</style>

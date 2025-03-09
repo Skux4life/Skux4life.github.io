@@ -1,20 +1,27 @@
 ---
-title: "CDK Football"
-description: "A simple API to try out using AWS CDK."
+title: "Investments Uplift for Rest Super"
+description: "Improving the frontend for members and the backend for staff."
 image:
-  url: "/GitHub.webp"
-  alt: "GitHub wallpaper"
-worksImage1:
-  url: "/images/aws-cdk.png"
-  alt: "AWS CDK"
-worksImage2:
-  url: "/images/football.jpeg"
-  alt: "Football graphic"
-platform: Web
-stack: AWS CDK, NodeJS
-website: https://github.com/Skux4life/cdk-football
-github: https://github.com/Skux4life/cdk-football
+  url: "/src/assets/images/inv-graph.png"
+  alt: "Rest Investment Option Page"
+platform: Full Stack
+stack: AWS CDK | NodeJS | React | Playwright
+website: https://rest.com.au/investments/options
+github: ""
 ---
 
-This is my first project using AWS CDK. It is a simple http API. The stack contains an API Gateway and a Lambda function.
-When sending a request to this API the Lambda function will make a request to another service to obtain some football related data and then return that in the response.
+This was a project to uplift the member experience on the website related to the investment options that are available to them. It also involved implementing a new backend with a file ingestion process so non-technical staff could update figures and information related to Rest's investment options.
+
+The frontend consists of React components that are embedded into the website CMS.
+The backend is an AWS serverless application that has been developed using AWS CDK and NodeJS.
+
+I was part of a small team that completed the full implemention. As part of the team I contributed to both the backend and frontend development.
+I am particularly proud of the investment option details page. I worked closely with our UI/UX designer to ensure the mobile, tablet and desktop experience was seemless. [View one of the pages here](https://rest.com.au/investments/options/growth)
+
+<img src="/src/assets/images/rest-inv-op.png" alt="image 1" 
+      class="pro-img"
+      width="500px"
+      height="auto"
+/>
+
+I also implemented an end-to-end test suite using Playwright for the frontend. In addition to this I developed a custom test suite for the backend that included comprehensive API tests, validation of the file ingestion process and the calculation of performance figures. This increased the team's velocity as we did not need to do manual regression testing before each release.

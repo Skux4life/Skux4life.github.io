@@ -4,15 +4,9 @@ description: "Space invaders style game built with pygame"
 image:
   url: "/images/pygame.jpg"
   alt: "Pygame logo"
-worksImage1:
-  url: "/images/alien-invasion-2.png"
-  alt: "game start image"
-worksImage2:
-  url: "/images/pygame.jpg"
-  alt: "pygame"
-platform: Web
+platform: Game
 stack: Python, Pygame
-website: https://github.com/Skux4life/alien_invasion
+website: ""
 github: https://github.com/Skux4life/alien_invasion
 ---
 

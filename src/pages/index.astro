@@ -1,51 +1,25 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
+import Intro from "../components/Intro.astro";
+import TechIcons from "../components/TechIcons.astro";
+import Portfolio from "../components/Portfolio.astro";
 const pageTitle = "Skux4life";
 ---
-<Layout pageTitle={pageTitle}>
-    <div class="gif">
-        <img width="300" height="259" alt="RaccoonSpaceGif" src="/space.webp"/>
-    </div>
-    <h1>Matt Ellis</h1>
-    <span class="badge">Web Development | Automation | QA</span>
-    <h2>About</h2>
-    <p>
-        Hi my name is Matt. I have over 5 years of experience in the software industry.
-        I am especially skilled at automation and web development.
-    </p>
-    <p>
-        I enjoy making things work well and am learning how to also make them look nice.
-        I don't enjoy doing repetitive tasks, hence why I also enjoy automation.
-    </p>
-    <div class="center">
-        <a href="/works/">
-            <button class="btn">My portfolio</button>
-        </a>
-    </div>
-    <h2>Skills</h2>
-    <div class="skills center">
-        <img class="skills__img" width="46" height="46" alt="TypeScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"/>
-        <img class="skills__img" width="46" height="46" alt="JavaScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"/>
-        <img class="skills__img" width="46" height="46" alt="CSS" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"/>
-        <img class="skills__img" width="46" height="46" alt="HTML" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"/>
-        <img class="skills__img" width="46" height="46" alt="Git" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"/>
-        <img class="skills__img" width="46" height="46" alt="AWS" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" />
-        <img class="skills__img" width="46" height="46" alt="Astro" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/astro/astro-original.svg" />
-        <img class="skills__img" width="46" height="46" alt="Java" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
-        <img class="skills__img" width="46" height="46" alt="K6" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/k6/k6-original.svg" />
-        <img class="skills__img" width="46" height="46" alt="Playwright" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/playwright/playwright-original.svg" />
-        <img class="skills__img" width="46" height="46" alt="Python" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
-        <img class="skills__img" width="46" height="46" alt="React" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
-        <img class="skills__img" width="46" height="46" alt="Tailwind" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
-               
-    </div>
-    <h2>Interests</h2>
-    <p>
-        When time permits I enjoy learning about Linux and tweaking my setup.
-        I have just begun dipping my toe into the Nix and NixOS ecosystem.
-    </p>
-    <p>
-        Outside of software related things, my hobbies include playing with my son, weightlifting, learning mandarin Chinese and watching Korean dramas with my wife.
-    </p>
-</Layout>
 
+<Layout pageTitle={pageTitle}>
+  <Intro />
+  <div class="cool-heading">
+    <div class="curved-rectangle"></div>
+    <h2>Skills</h2>
+    <p>Some things I like to think I'm good at.</p>
+  </div>
+
+  <TechIcons />
+  <Portfolio />
+
+  <!-- <div class="center"> -->
+  <!--   <a href="/works/"> -->
+  <!--     <button class="btn">My portfolio</button> -->
+  <!--   </a> -->
+  <!-- </div> -->
+</Layout>

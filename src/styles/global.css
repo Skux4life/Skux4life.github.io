@@ -1,15 +1,68 @@
+/* lato-latin-400-normal */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src:
+    url(https://cdn.jsdelivr.net/fontsource/fonts/lato@latest/latin-400-normal.woff2)
+      format("woff2"),
+    url(https://cdn.jsdelivr.net/fontsource/fonts/lato@latest/latin-400-normal.woff)
+      format("woff");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+/* nova-mono-latin-400-normal */
+@font-face {
+  font-family: "Nova Mono";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src:
+    url(https://cdn.jsdelivr.net/fontsource/fonts/nova-mono@latest/latin-400-normal.woff2)
+      format("woff2"),
+    url(https://cdn.jsdelivr.net/fontsource/fonts/nova-mono@latest/latin-400-normal.woff)
+      format("woff");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
 /* Global styles */
 :root {
-  --background: hsl(240 21% 15%);
-  --background-light: hsl(333 82% 96%);
-  --background-alt: hsl(271 17% 34%);
-  --button: hsl(163 38% 62%);
-  --text: hsl(333 82% 96%);
-  --text-light: hsl(240 21% 15%);
-  --text-link: hsl(163 38% 62%);
-  --underline: hsl(211 40% 36%);
-  --header: "Pacifico", cursive;
-  --body: "Josefin Sans", sans-serif;
+  /* Nord Colors: https://www.nordtheme.com/docs/colors-and-palettes */
+  --nord-polar-night-1: hsl(220, 16%, 22%);
+  --nord-polar-night-2: hsl(222, 16%, 28%);
+  --nord-polar-night-3: hsl(220, 17%, 32%);
+  --nord-polar-night-4: hsl(220, 16%, 36%);
+
+  --nord-snow-storm-1: hsl(219, 28%, 88%);
+  --nord-snow-storm-2: hsl(218, 27%, 92%);
+  --nord-snow-storm-3: hsl(218, 27%, 94%);
+
+  --nord-frost-1: hsl(179, 25%, 65%);
+  --nord-frost-2: hsl(193, 43%, 67%);
+  --nord-frost-3: hsl(210, 34%, 63%);
+  --nord-frost-4: hsl(213, 32%, 52%);
+
+  --nord-aurora-red: hsl(354, 42%, 56%);
+  --nord-aurora-orange: hsl(14, 51%, 63%);
+  --nord-aurora-yellow: hsl(40, 71%, 73%);
+  --nord-aurora-green: hsl(92, 28%, 65%);
+  --nord-aurora-purple: hsl(311, 20%, 63%);
+
+  --background: var(--nord-polar-night-1);
+  --background-light: var(--nord-snow-storm-3);
+  --background-alt: var(--nord-aurora-purple);
+  --button: var(--nord-frost-2);
+  --text: var(--nord-snow-storm-3);
+  --text-light: var(--nord-polar-night-1);
+  --text-link: var(--nord-aurora-red);
+  --underline: var(--nord-aurora-yellow);
+  --header: "Nova Mono", monospace;
+  --body: "Lato", sans-serif;
 }
 
 html {
@@ -21,6 +74,13 @@ body {
   max-width: 540px;
   margin: 0 auto;
   text-align: justify;
+  word-break: unset;
+  word-wrap: unset;
+  overflow-wrap: unset;
+  -webkit-hyphens: unset;
+  -moz-hyphens: unset;
+  -ms-hyphens: unset;
+  hyphens: unset;
 }
 
 h1,
@@ -36,9 +96,6 @@ h1 {
 }
 
 h2 {
-  text-decoration: underline var(--underline);
-  text-decoration-thickness: 4px;
-  text-underline-offset: 6px;
   font-size: 2.1rem;
   margin-bottom: 0;
 }
@@ -46,7 +103,6 @@ h2 {
 p {
   font-family: var(--body);
   font-size: 1.1rem;
-  hyphens: auto;
   line-height: 1.5;
   text-indent: 1rem;
 }
@@ -105,7 +161,9 @@ li {
   border-radius: 6px;
   font-family: var(--body);
   font-weight: 600;
-  font-size: 0.85rem;
+  font-size: 2rem;
+  text-align: center;
+  margin: 1em 0;
   padding: 0.3em 0.6em 0.2em;
 }
 
@@ -176,8 +234,10 @@ li {
 }
 
 .link-card-grid {
+  width: calc(100vw - 200px);
+  margin-left: calc(-50vw + 50% + 100px);
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+  grid-template-columns: 1fr 1fr;
   gap: 1rem;
   padding: 0;
 }
@@ -356,6 +416,64 @@ html.light {
   color: var(--text-link);
 }
 
+.cool-heading {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+  height: 200px;
+
+  h2 {
+    position: absolute;
+    top: 25%;
+    left: 6.5%;
+  }
+  p {
+    margin-top: 150px;
+    float: right;
+    text-align: right;
+  }
+}
+
+.other-curved-rectangle {
+  --c: 60; /* control the curvature (a percentage value without unit bigger than 50%)*/
+
+  height: 200px;
+  aspect-ratio: 3/5;
+  background: var(--nord-frost-3);
+  mask: radial-gradient(
+    100% calc(var(--c) * 1%) at calc(100% + 100% * cos(asin(50 / var(--c)))),
+    #0000 calc(100%),
+    #000
+  );
+  clip-path: ellipse(100% calc(var(--c) * 1%) at right);
+  position: absolute;
+  right: 0;
+  z-index: -10;
+}
+
+.curved-rectangle {
+  --c: 60; /* control the curvature (a percentage value without unit bigger than 50%)*/
+
+  height: 200px;
+  aspect-ratio: 3/5;
+  background: var(--nord-frost-3);
+  mask: radial-gradient(
+    100% calc(var(--c) * 1%) at calc(-100% * cos(asin(50 / var(--c)))),
+    #0000 calc(100% - 1px),
+    #000
+  );
+  clip-path: ellipse(100% calc(var(--c) * 1%) at left);
+  position: absolute;
+  z-index: -10;
+}
+
+.light .curved-rectangle {
+  background: var(--nord-frost-1);
+}
+.light .other-curved-rectangle {
+  background: var(--nord-frost-1);
+}
+
 /* Media Query */
 @media only screen and (max-width: 600px) {
   body {
@@ -392,5 +510,23 @@ html.light {
   .pro-img {
     height: auto;
     width: 350px;
+  }
+
+  .cool-heading h2 {
+    left: 10%;
+  }
+
+  .cool-heading p {
+    max-width: 200px;
+  }
+
+  .link-card-grid {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .link-card-grid {
+    grid-template-columns: 1fr;
   }
 }
