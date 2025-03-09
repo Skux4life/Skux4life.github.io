@@ -3,6 +3,9 @@ import { getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
 import ProjectCard from "../components/ProjectCard.astro";
 const allProjects = await getCollection("projects");
+allProjects.sort(
+  (a, b) => Number(a.slug.split("-")[1]) - Number(b.slug.split("-")[1]),
+);
 const pageTitle = "Projects";
 ---
 
@@ -13,7 +16,7 @@ const pageTitle = "Projects";
       allProjects.map((card) => (
         <ProjectCard
           url={`/projects/${card.slug}/`}
-          image={card.data.image.url}
+          image={card.data.cover.src}
           title={card.data.title}
           body={card.data.description}
         />

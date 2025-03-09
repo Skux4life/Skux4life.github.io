@@ -2,6 +2,9 @@
 import { getCollection } from "astro:content";
 let allProjects = await getCollection("projects");
 allProjects = allProjects.slice(0, 3);
+allProjects.sort(
+  (a, b) => Number(a.slug.split("-")[1]) - Number(b.slug.split("-")[1]),
+);
 import ProjectCard from "../components/ProjectCard.astro";
 ---
 
@@ -17,7 +20,7 @@ import ProjectCard from "../components/ProjectCard.astro";
       allProjects.map((card) => (
         <ProjectCard
           url={`/projects/${card.slug}/`}
-          image={card.data.image.url}
+          image={card.data.cover.src}
           title={card.data.title}
           body={card.data.description}
         />

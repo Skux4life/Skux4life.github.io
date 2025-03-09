@@ -1,9 +1,8 @@
 ---
 title: "Alien Invasion"
 description: "Space invaders style game built with pygame"
-image:
-  url: "/images/pygame.jpg"
-  alt: "Pygame logo"
+cover: "../../assets/images/pygame.jpg"
+alt: "Pygame logo"
 platform: Game
 stack: Python, Pygame
 website: ""

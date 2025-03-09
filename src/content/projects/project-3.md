@@ -1,9 +1,8 @@
 ---
 title: "Frontend Challenges"
 description: "A collection of different UI challenges that I've completed."
-image:
-  url: "/src/assets/images/frontend-challenge.png"
-  alt: "Frontend challenges project image"
+cover: "../../assets/images/frontend-challenge.png"
+alt: "Frontend challenges project image"
 platform: Frontend
 stack: Astro | JavaScript | React | TailwindCSS
 website: https://frontend-challenges-4ef.pages.dev/
