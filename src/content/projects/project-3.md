@@ -11,10 +11,6 @@ github: https://github.com/Skux4life/frontend-challenges
 
 This is a project where I try out different UI challenges. Usually this involves building a single component based on something I've seen in a design. It's just a way that I can keep improving my skills in a fun way.
 
-<img src="/src/assets/images/frontend-challenge-1.png" alt="image 1" 
-      class="pro-img"
-      width="500px"
-      height="auto"
-/>
+![Profile card](../../assets/images/frontend-challenge-1.png)
 
 The project itself uses Astro and for most of the components I'm using React plus TailwindCSS. However, I sometimes just use Astro components with vanilla JS. And in future I might try to use Vue or Svelte.
