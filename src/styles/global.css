@@ -293,6 +293,14 @@ li {
   object-fit: cover;
 }
 
+main p img {
+  width: 500px;
+  height: auto;
+  border-radius: 16px;
+  margin-top: 10px;
+  object-fit: cover;
+}
+
 /* Footer */
 footer {
   margin: 4rem 0;
@@ -508,6 +516,11 @@ html.light {
   }
 
   .pro-img {
+    height: auto;
+    width: 350px;
+  }
+
+  main p img {
     height: auto;
     width: 350px;
   }
